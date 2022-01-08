@@ -32,3 +32,11 @@ To run it on backend, follow these steps -
 2. Download the code
 3. Open any command prompt and point to the `Group-Array-Elements` folder
 4. Run `npm start` or `node index.js` and you will see the results
+
+# Explanation
+
+What we are doing here is -
+1. We are running a loop over the input array
+2. We are creating a temporary array by pushing elements from the input array into it.
+3. As soon as the temporary array becomes equal to the chunk size we want, we will push it into the output array and reset the temporary array.
+4. A special case, when the input array reaches end and the temporary array has not reached the chunk size, we consider it as last chunk and still push onto the output array.
